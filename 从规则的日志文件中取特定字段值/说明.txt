@@ -1,0 +1,7 @@
+说明：
+从程序中取日志数据，取tmp.log中的Speed 的流量值
+
+1.先用shell命令执行
+more tmp.log |cut -d '=' -f 3 |awk '{print $1}'
+
+2.拷贝数据到EXCEL中，替换KB值.
